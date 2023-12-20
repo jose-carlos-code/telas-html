@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Barlow';
-    src: url('fontes/Barlow-Black.ttf');
+    src: url('fontes/Barlow-ExtraBold.ttf');
 }
 
 *{
@@ -115,8 +115,6 @@ header .menu-principal .menu-jaboatao .item-menu-principal ::after{
 }
 
 
-
-
 main .principal{
     max-width: 50%;
     margin: 5% auto;
@@ -144,8 +142,19 @@ main .principal h1{
 main .principal p{
     display: inline;
     color:#376094;
-    font-size: 28px;
+    font-size: 20px;
     margin-top: 20px;
+}
+
+main .principal .btn-acessa-sei{
+    background-color: #003476;
+    padding: 20px 20px 20px 20px;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #FFFFFF;
+    border-radius: 8px 8px 8px 8px;
+    
 }
 
 /*Responsividade*/
