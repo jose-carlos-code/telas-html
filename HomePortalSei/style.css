@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('fontes/Barlow-Black.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    width: 100vw ;
+}
+
+header{
+    width: 100vw;
+}
+
+header .menu-superior{
+   border-bottom: 1px solid #ffffff;
+   width: 100%;
+}
+
+header .menu-redes-sociais{
+    background-color: #003476;
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+   
+}
+
+.menu-superior .menu-redes-sociais .redes-sociais{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 3.5%;
+    
+}
+
+.menu-superior .redes-sociais .item-rede-social{
+  margin-left: 13px;
+}
+
+.menu-superior .menu-redes-sociais .menu-contato{
+    list-style: none;
+    display: flex;
+    font-size: 12pt;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.menu-superior .menu-redes-sociais .menu-contato .item-contato{
+    margin-left: 10px;
+
+}
+.menu-superior .menu-redes-sociais .menu-contato .item-contato a{
+    color: #ffffff;
+    text-decoration: none
+}
+
+.menu-superior .menu-redes-sociais .menu-contato .item-contato:hover{
+    text-decoration: underline #ffffff;
+}
+
+header .menu-principal{
+    background-color: #2E598A;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+ header .menu-principal .logo-jaboatao{
+    margin-left: 5%;
+ }
+
+header .menu-principal .menu-jaboatao{
+    display: flex;
+    list-style: none;
+}
+
+header .menu-principal .menu-jaboatao .item-menu-principal{
+    margin-right: 15px;
+    font-size: 14pt;
+}
+
+header .menu-principal .menu-jaboatao .item-menu-principal ::after{
+    cursor: pointer;
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    visibility: hidden;
+    -moz-transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -ms-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+    /* text-decoration: underline #ffffff; */
+}
+
+
+
+
+main .principal{
+    max-width: 50%;
+    margin: 5% auto;
+}
+
+main .principal .principal-logo{
+    display: flex;
+}
+
+main .principal .principal-logo .coluna-logo{
+    display: flex;
+    flex-direction: column;
+}
+main .principal .principal-logo, h1, p{
+    margin-left: 15px;
+}
+
+main .principal h1{
+    font-family: 'Barlow';
+    font-size: 56px;
+    display: inline;
+    color: #003476;
+}
+
+main .principal p{
+    display: inline;
+    color:#376094;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+/*Responsividade*/
+@media only screen and (max-width: 500px){
+    body{
+        color: black;
+    }
+}
